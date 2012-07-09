@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>libusbx</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <p>
+      <a href="http://libusbx.org"><img style="vertical-align:middle" src="images/libusbx-160.png" alt="libusbx"/></a> eXpand your USB potential
+      <br>
+    </p>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="https://sourceforge.net/projects/libusbx/" id="current">About</a>
+      </li>
+      <li><a href="https://sourceforge.net/projects/libusbx/files/">Downloads</a>
+        <ul>
+          <li><a href="https://sourceforge.net/projects/libusbx/files/latest/download?source=files">Latest Source (tarball)</a></li>
+          <li><a href="https://sourceforge.net/projects/libusbx/files/releases/">Other Releases</a></li>
+          <li><a href="https://sourceforge.net/projects/libusbx/files/releases/1.0.12/Windows/">Latest Windows Binaries</a></li>
+        </ul>
+      </li>
+      <li><a href="http://libusbx.sourceforge.net/api-1.0/">Documentation</a>
+        <ul>
+          <li><a href="http://libusbx.sourceforge.net/api-1.0/">libusbx API (v1.0)</a></li>
+          <li><a href="https://github.com/libusbx/libusbx/wiki">Wiki</a></li>
+          <li><a href="https://github.com/libusbx/libusbx/wiki/FAQ">FAQ</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/libusbx/libusbx/issues">Support</a>
+        <ul>
+          <li><a href="https://lists.sourceforge.net/lists/listinfo/libusbx-devel">Post to Mailing List</a></li>
+          <li><a href="https://sourceforge.net/search/?group_id=690708&type_of_search=mlists">Search Mailing List</a></li>
+          <li><a href="https://sourceforge.net/mailarchive/forum.php?forum_name=libusbx-devel">Mailing List Archives</a></li>
+          <li><a href="https://github.com/libusbx/libusbx/issues/new">Report New Issue</a></li>
+          <li><a href="https://github.com/libusbx/libusbx/issues?sort=created&state=open">Search Existing Issues</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/libusbx/libusbx">Development</a>
+        <ul>
+          <li><a href="https://github.com/libusbx/libusbx/commits/master">Git Log</a></li>
+          <li><a href="https://github.com/libusbx/libusbx/wiki#wiki-Accessing_the_Source">Git Access</a></li>
+          <li><a href="https://github.com/libusbx/libusbx/issues/milestones?direction=asc&sort=due_date">Roadmap</a></li>
+<!--          <li><a href="#">Sending Patches</a></li> -->
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <h2>Overview</h2>  	
+    <p><b>libusbx</b> is a library that provides generic access to USB devices. As a library, it is meant to be used by developers, to facilitate the development of applications that communicate with USB hardware.</p>
+    <p>It is <b>portable</b>: Using a single cross-platform API, it provides access to USB devices on Linux, OS&nbsp;X, Windows and OpenBSD.</p>
+    <p>It is <b>user-mode</b>: No special privilege or elevation is required for the application to communicate with a device.</p>
+    <p>It is <b>version-agnostic</b>: All versions of the USB protocol, from 1.0 to 3.0 (latest), are supported.</p>
+    <h2>Is libusbx a fork of libusb?</h2>
+    <p>Yes it is.</p>
+    <p>The reason for the fork is that, despite having dedicated members, libusb has barely been able to produce a release in over <b>2 years</b>. Unfortunately, when a project consistently fails to produce regular releases, we consider that <b>you</b>, its user, are paying the ultimate price. The reason is, patches and new feature are being witheld and you end up wasting <b>your time</b>.</p>
+  <p>As we are the same group of dedicated people who relentlessly tried to improve libusb while seeing our efforts wasted there, and with overwhelming support from regular libusb users, we have simply decided to take action for your sake.</p>
+    <p>After using <b>libusbx</b> for a while and after dealing with our great community, we are certain that you will be as convinced as we are that there does exist a better way!</p>
+    <h2>Do I need to do anything special to use <b>libusbx</b>?</h2>
+    <p>If you are an existing user of libusb, you don't have to change anything. Just download the <b>libusbx</b> library and use it in your code. The library is designed as a drop in replacement for libusb, so please give it a try. If you don't like it, which we very much doubt, you can always revert...</p>
+    <p>If you are a new user of <b>libusbx</b>, please have a look at our <a href="http://libusbx.sourceforge.net/api-1.0/">API documentation</a> or check out our <a href="https://github.com/libusbx/libusbx/tree/master/examples">samples</a> and get rolling! And as always, we will be <a href="https://lists.sourceforge.net/lists/listinfo/libusbx-devel">here</a> to help you out.</p>
+    <h2>What are the advantages of libusbx over libusb?</h2>
+    <p>Apart from frequent releases that include regular bugfixes as well as exciting new features (please have a look at our <a href="https://github.com/libusbx/libusbx/issues/milestones?direction=asc&sort=due_date">roadmap</a>), you should find that we are a lot more responsive and that, rather than focus our efforts on elements that are of little interest to you as well as the ever delayed promise of "better" things that fail to materialize, our focus is very much about bringing you the best possible user experience <b>today</b>.</p>
+    <p>Unlike libusb, we also subscribe to the <i>Release Early, Release Often</i> (<i>RERO</i>) philosophy, upon which the success of the Linux kernel and countless other Open Source projects is based.</p>
+    <p>Finally, if there's anything the failure of libusb has taught us, it's that a project should never fail to listen to <b>you</b>, its user!</p>
+   <br/>
+    <p><b>For any additional information, please consult the <a href="https://github.com/libusbx/libusbx/wiki/FAQ">FAQ</a> or the <a href="https://github.com/libusbx/libusbx/wiki">Wiki</a>.</b></p>
+  </div>
+  <div class="footer">
+    Copyright © 2012 libusbx<br/>
+    CSS menu by <a href="http://www.cssmenumaker.com/">CSS menumaker</a>
+  </div>  
+</body>
+</html>
