@@ -18,9 +18,9 @@
       </li>
       <li><a href="http://sourceforge.net/projects/libusbx/files/">Downloads</a>
         <ul>
-          <li><a href="http://sourceforge.net/projects/libusbx/files/latest/download?source=files">Latest Source (tarball)</a></li>
-          <li><a href="http://sourceforge.net/projects/libusbx/files/releases/1.0.18/binaries/">Latest Windows Binaries</a></li>
-          <li><a href="http://sourceforge.net/projects/libusbx/files/releases/">Other Releases</a></li>
+          <li><a href="http://sourceforge.net/projects/libusbx/files/latest/download?source=files">Final Release (tarball)</a></li>
+          <li><a href="http://sourceforge.net/projects/libusbx/files/releases/1.0.18/binaries/">Final Windows Binaries</a></li>
+          <li><a href="http://sourceforge.net/projects/libusbx/files/releases/">Previous Releases</a></li>
         </ul>
       </li>
       <li><a href="http://libusbx.sourceforge.net/api-1.0/">Documentation</a>
@@ -32,45 +32,50 @@
       </li>
       <li><a href="https://github.com/libusbx/libusbx/issues">Support</a>
         <ul>
-          <li><a href="https://lists.sourceforge.net/lists/listinfo/libusbx-devel">Post to Mailing List</a></li>
           <li><a href="https://sourceforge.net/search/?group_id=690708&type_of_search=mlists">Search Mailing List</a></li>
           <li><a href="https://sourceforge.net/mailarchive/forum.php?forum_name=libusbx-devel">Mailing List Archives</a></li>
-          <li><a href="https://github.com/libusbx/libusbx/issues/new">Report New Issue</a></li>
+          <li><a href="https://github.com/libusb/libusb/issues/new">Report New Issue</a></li>
           <li><a href="https://github.com/libusbx/libusbx/issues?sort=created&state=open">Search Existing Issues</a></li>
         </ul>
       </li>
       <li><a href="https://github.com/libusbx/libusbx">Development</a>
         <ul>
-          <li><a href="https://github.com/libusbx/libusbx/issues/milestones?direction=asc&sort=due_date">Roadmap</a></li>
           <li><a href="https://github.com/libusbx/libusbx/commits/master">Git Log</a></li>
-          <li><a href="https://github.com/libusbx/libusbx/wiki#wiki-Accessing_the_Source">Git Access</a></li>
-<!--          <li><a href="#">Sending Patches</a></li> -->
         </ul>
       </li>
     </ul>
   </div>
   <div class="main">
-    <h2>Overview</h2>  	
-    <p><b>libusbx</b> is a library that provides generic access to USB devices. As a library, it is meant to be used by developers, to facilitate the production of applications that communicate with USB hardware.</p>
-    <p>It is <b>portable</b>: Using a single cross-platform API, it provides access to USB devices on Linux, OS&nbsp;X, Windows and OpenBSD.</p>
-    <p>It is <b>user-mode</b>: No special privilege or elevation is required for the application to communicate with a device.</p>
-    <p>It is <b>version-agnostic</b>: All versions of the USB protocol, from 1.0 to 3.0 (latest), are supported.</p>
-    <h2>Is libusbx a fork of libusb?</h2>
-    <p>It is.</p>
-    <p>The reason for the fork is that, despite having dedicated contributors, libusb has barely been able to produce a release in about <b>3 years</b>. Unfortunately, when a project consistently fails to produce releases, it means that <b>you</b>, its user, are paying the ultimate price as patches and new features, that could be highly beneficial, are being witheld and you end up wasting <b>your time</b>.</p>
-    <p>The good news however is that, in part due to competition from libusbx and thanks to a recent change of maintainers, the situation described above is improving at long last. As such, we are hoping to merge back with libusb in the near future.</p>
-    <h2>Do I need to do anything special to use <b>libusbx</b>?</h2>
-    <p>If you are an existing user of libusb, you don't have to change anything. Just download the <b>libusbx</b> library and use it in your code. The library is designed as a drop in replacement for libusb, so please give it a try. If you don't like it, you can always revert...</p>
-    <p>Also, if you are a new user of <b>libusbx</b>, please have a look at our <a href="http://libusbx.sourceforge.net/api-1.0/">API documentation</a> or check out our <a href="https://github.com/libusbx/libusbx/tree/master/examples">samples</a>. And as always, we are <a href="https://lists.sourceforge.net/lists/listinfo/libusbx-devel">here</a> to help you out.</p>
-    <h2>What are the current advantages of libusbx over libusb?</h2>
-    <p>Apart from frequent releases, which include regular bugfixes as well as exciting new features (please check our <a href="https://github.com/libusbx/libusbx/issues/milestones?direction=asc&sort=due_date">roadmap</a>), you should find that we are a lot more responsive and that, rather than focus our efforts on elements that are of little interest to you, or an ever delayed promise of "better" features that fail to materialize, we strive to bring you the best possible user and developer experience <b>today</b>.</p>
-    <p>Also, unlike libusb, we fully subscribe to the <i>Release Early, Release Often</i> (<i>RERO</i>) philosophy, upon which the success of the Linux kernel and countless other Open Source projects is based.</p>
-    <p>Finally, if there's anything the failure of libusb has taught us, it's that a project should never fail to listen to <b>you</b>, its user... As such, <b>libusbx</b> is as much <b>your</b> library as it is ours, and we hope that you will engage with us to help make it even greater!</p>
-   <br/>
-    <p><b>For any additional information, please consult the <a href="https://github.com/libusbx/libusbx/wiki/FAQ">FAQ</a> or the <a href="https://github.com/libusbx/libusbx/wiki">Wiki</a>.</b></p>
+    <h2>Overview</h2>
+    <p><b>libusbx</b> <u>was</u> a fork of <a href="http://libusb.info"><b>libusb</b></a>, a library that provides generic access to USB devices.</b>
+    <p>As of 2014.01.26, this project has been fully merged back into <a href="http://libusb.info"><b>libusb</b></a> and is being discontinued.</p>
+    <p>Since there will be no further releases of <b>libusbx</b>, you are strongly encouraged to switch to using <a href="http://libusb.info"><b>libusb</b></a>.
+    <h2>Migrating to libusb</h2>
+    <p>If you are an existing libusb user:
+      <ul>
+<li>As far as the library binary and header are concerned, since libusb and libusbx use the same names and have the same API, you just need to replace your deployed libusbx files with the libusb ones. That's all!</li>
+      <li>The SourceForge project changes from<br/>
+       <a href="https://sourceforge.net/projects/libusbx/">https://sourceforge.net/projects/libusbx/</a> to<br/>
+       <a href="https://sourceforge.net/projects/libusb/">https://sourceforge.net/projects/libusb/</a></li>
+      <li>The mailing list changes from<br/>
+       <a href="https://lists.sourceforge.net/lists/listinfo/libusbx-devel">libusbx-devel@lists.sourceforge.net</a> to<br/>
+       <a href="https://lists.sourceforge.net/lists/listinfo/libusb-devel">libusb-devel@lists.sourceforge.net</a></li>
+      <li>The API documentation changes from<br/>
+       <a href="http://libusbx.sourceforge.net/api-1.0/">http://libusbx.sourceforge.net/api-1.0/</a> to<br/>
+       <a href="http://libusb.sourceforge.net/api-1.0/">http://libusb.sourceforge.net/api-1.0/</a></li>
+      <li>The git repository changes from<br/>
+       <a href="https://github.com/libusbx/libusbx">git://github.com/libusbx/libusbx.git</a> to<br/>
+       <a href="https://github.com/libusb/libusb">git://github.com/libusb/libusb.git</a></li>
+      <li>The Homepage changes from<br/>
+       <a href="http://libusbx.org">http://libusbx.org</a> to<br/>
+       <a href="http://libusb.info">http://libusb.info</a></li>
+      <li>The github project (Wiki, issue tracker, etc.) changes from<br/>
+       <a href="https://github.com/libusbx/libusbx">https://github.com/libusbx/libusbx</a> to<br/>
+       <a href="https://github.com/libusb/libusb">https://github.com/libusb/libusb</a></li></ul></p>
+    <p><b>For any additional information, please see <a href="http://libusbx.1081486.n5.nabble.com/Libusbx-devel-Announcing-libusb-1-0-18-as-well-as-libusbx-1-0-18-FINAL-tp2375.html">this post</a>.</b></p>
   </div>
   <div class="footer">
-    Copyright © 2012-2013 libusbx<br/>
+    Copyright © 2012-2014 libusbx<br/>
     CSS menu by <a href="http://www.cssmenumaker.com/">CSS menumaker</a>
   </div>  
 </body>
